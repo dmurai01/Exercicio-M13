@@ -1,0 +1,33 @@
+{
+	"id": "2d0b9c59-b767-4759-8a16-16f36198b0e6",
+	"values": [
+		{
+			"key": "dev",
+			"value": "https://pokeapi.co/api/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "baseURLSW",
+			"value": "https://swapi.dev/api/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "local",
+			"value": "http://localhost:3000/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2025-05-15T16:43:07.483Z",
+	"_postman_exported_using": "Postman/11.43.2"
+}
