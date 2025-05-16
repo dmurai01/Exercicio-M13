@@ -59,6 +59,9 @@
 						"exec": [
 							"pm.test(\"Cadastro realizado com sucesso\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Cadastro realizado com sucesso\");\r",
 							"});"
 						],
 						"type": "text/javascript",
@@ -109,6 +112,9 @@
 						"exec": [
 							"pm.test(\"Este email já está sendo usado\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Este email já está sendo usado\");\r",
 							"});"
 						],
 						"type": "text/javascript",
@@ -149,7 +155,8 @@
 						"exec": [
 							"pm.test(\"Usuário encontrado\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -183,6 +190,9 @@
 						"exec": [
 							"pm.test(\"Usuário não encontrado\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Usuário não encontrado\");\r",
 							"});"
 						],
 						"type": "text/javascript",
@@ -253,7 +263,9 @@
 							"pm.test(\"Não é permitido excluir usuário com carrinho cadastrado\" , function () {\r",
 							"    pm.response.to.have.status(400);\r",
 							"});\r",
-							""
+							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Não é permitido excluir usuário com carrinho cadastrado\");\r",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -330,6 +342,9 @@
 						"exec": [
 							"pm.test(\"Este email já está sendo usado\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Este email já está sendo usado\");\r",
 							"});"
 						],
 						"type": "text/javascript",
@@ -371,8 +386,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Cadastro realizado com sucesso\"\", function () {\r",
+							"pm.test(\"Cadastro realizado com sucesso\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Cadastro realizado com sucesso\");\r",
 							"});"
 						],
 						"type": "text/javascript",
